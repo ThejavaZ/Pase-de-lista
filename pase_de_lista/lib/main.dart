@@ -12,11 +12,12 @@ class PaseDeLista extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pase de Lista',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: const ProfilePage(title: 'Flutter Demo Home Page'),
+      home: const ProfilePage(title: 'Codigo QR'),
     );
   }
 }

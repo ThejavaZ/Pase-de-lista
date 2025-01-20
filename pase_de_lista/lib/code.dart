@@ -17,19 +17,33 @@ class _CodePageState extends State<CodePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'code page',
-            ),
-            Text(
-              '',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Expanded(child: Image.asset("images/qr.png")),
+          Expanded(
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Row(children: [
+                Padding(
+                    padding: EdgeInsets.fromLTRB(16, 0, 16, 0),
+                    child: Icon(Icons.school)),
+                Text("Aplicaciones Moviles Multiplataforma",
+                    style: TextStyle(fontSize: 20))
+              ]),
+              Row(children: [
+                Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Icon(Icons.school)),
+                Text(
+                  "Aplicaciones de IoT",
+                  style: TextStyle(fontSize: 20),
+                )
+              ]),
+            ],
+          ))
+        ],
       ),
     );
   }
