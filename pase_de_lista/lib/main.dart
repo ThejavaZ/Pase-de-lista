@@ -17,7 +17,7 @@ class PaseDeLista extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: const ProfilePage(title: 'Codigo QR'),
+      home: const ProfilePage(title: 'Porfile'),
     );
   }
 }
