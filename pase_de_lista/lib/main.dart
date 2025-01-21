@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'porfile.dart';
+import 'home.dart';
 
 void main() {
   runApp(const PaseDeLista());
@@ -17,7 +17,7 @@ class PaseDeLista extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: const ProfilePage(title: 'Porfile'),
+      home: const HomePage(title: 'Porfile'),
     );
   }
 }
